@@ -52,6 +52,9 @@ pub fn create_users(base_url: &String, token: &String, client: &reqwest::blockin
     .send()
     .expect("Could not make post request to create users");
 
-    println!("User creation ended with status code {}", res.status())
+    println!("User creation ended with status: {}", res.status())
 
 }
+
+#[allow(dead_code)]
+fn get_users_from_file(){}

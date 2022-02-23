@@ -1,0 +1,16 @@
+---
+- username: patrikyaml
+  email: myemail@email.com
+  firstname: thisfirstname
+  lastname: thislastname
+  emailverified: false
+- username: patrik2yaml
+  email: my2mail2@email.com
+  firstname: thisisfirstname
+  lastname: thislastname
+  emailverified: false
+- username: 3rduser
+  email: 3rdemail@email.com
+  firstname: randomfirstname
+  lastname: randomlastname
+  emailverified: false
