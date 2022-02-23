@@ -16,7 +16,7 @@ pub fn list_users(base_url: &String, token: &String, client: &reqwest::blocking:
         .send()
         .expect("Could not get users")
         .text()
-        .expect("Could not get response as bytes");
+        .expect("Could not get response as text");
 
     let userdatas: Vec<Userdata> = serde_json::from_str(&res).expect("Could not deserialize to struct");
 
