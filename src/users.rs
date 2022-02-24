@@ -30,6 +30,7 @@ pub fn list_users(base_url: &String, token: &String, client: &reqwest::blocking:
 
 }
 
+#[allow(dead_code)]
 pub fn create_users(base_url: &String, token: &String, client: &reqwest::blocking::Client, username: String, 
     email: String, firstname: String, lastname: String, emailverified: bool, userid: String) {
 
