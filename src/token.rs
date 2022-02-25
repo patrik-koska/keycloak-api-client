@@ -36,8 +36,8 @@ pub fn get_token(
 
 #[allow(dead_code)]
 pub fn get_refresh_token(
-    base_url: &String, client_id: &String, secret: &String, 
-    user: &String, pass: &String, grant_type: &String, 
+    base_url: &String, client_id: String, secret: String, 
+    user: String, pass: String, grant_type: String, 
     client: reqwest::blocking::Client
     ) -> String {
     
