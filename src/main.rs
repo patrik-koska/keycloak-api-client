@@ -29,7 +29,7 @@ fn main() {
 
     let client = reqwest::blocking::Client::new();
 
-    let token = token::get_token(&args.base_url, &args.client_id, &args.secret, &args.admin_user, &args.password, &args.grant_type, &client);
+    let token = token::get_token(&args.base_url, args.client_id, args.secret, args.admin_user, args.password, args.grant_type, &client);
 
     users::list_users(&args.base_url, &token, &client);
     

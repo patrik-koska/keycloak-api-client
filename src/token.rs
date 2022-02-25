@@ -8,8 +8,8 @@ struct TokenData {
 }
 
 pub fn get_token(
-    base_url: &String, client_id: &String, secret: &String, 
-    user: &String, pass: &String, grant_type: &String, 
+    base_url: &String, client_id: String, secret: String, 
+    user: String, pass: String, grant_type: String, 
     client: &reqwest::blocking::Client
     ) -> String {
     
