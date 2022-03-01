@@ -1,7 +1,7 @@
 mod token;
 mod users;
 mod userid;
-use uuid::Uuid;
+//use uuid::Uuid;
 use clap::Parser;
 
 #[derive(Parser)]
@@ -21,11 +21,11 @@ struct Cli {
 }
 
 fn main() {
-    let uuid = Uuid::new_v4();
+    //let uuid = Uuid::new_v4();
 
     let args = Cli::parse();
 
-    let userid = userid::gen_uuid(&uuid);
+    //let userid = userid::gen_uuid(&uuid);
 
     let client = reqwest::blocking::Client::new();
 
